@@ -1,0 +1,15 @@
+[package]
+name = "exact-draft-sequence-sampler"
+version = "0.1.0"
+edition = "2021"
+description = "Finite-vocabulary speculative sampler: lightweight draft proposals verified by a target conditional distribution with exact output law"
+
+[lib]
+name = "exact_draft_sequence_sampler"
+path = "src/lib.rs"
+
+[dependencies]
+
+[profile.release]
+opt-level = 3
+lto = true
