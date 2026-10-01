@@ -1,0 +1,15 @@
+[package]
+name = "exact-draft-sequence-sampler"
+version = "0.1.0"
+edition = "2021"
+description = "Exact speculative sampling over finite-vocabulary conditional probability tables"
+license = "MIT"
+
+[lib]
+name = "exact_draft"
+path = "src/lib.rs"
+
+[dependencies]
+
+[profile.release]
+lto = true
